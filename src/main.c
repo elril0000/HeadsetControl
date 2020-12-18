@@ -361,6 +361,11 @@ int main(int argc, char* argv[])
                 printf("Battery: Unavailable\n");
             else
                 printf("-2");
+        } else if (ret == BATTERY_FULL) {
+            if (!short_output)
+                printf("Battery: Full\n");
+            else
+                printf("-3");
         } else {
             if (!short_output)
                 printf("Battery: %d%%\n", ret);

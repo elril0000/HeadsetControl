@@ -23,7 +23,8 @@ enum capabilities {
  */
 enum battery_status {
     BATTERY_UNAVAILABLE = 65534,
-    BATTERY_CHARGING = 65535
+    BATTERY_CHARGING = 65535,
+    BATTERY_FULL = 65536
 };
 
 enum headsetcontrol_errors {
